@@ -1,6 +1,7 @@
 import * as fs from 'fs'
+import renderIndexView from './functions';
 
-const rootDir = __dirname.split('/src')[0]
+export const rootDir = __dirname.split('/src')[0]
 const businessModel = 'business_model'
 
 function onError(error: unknown) {
@@ -15,7 +16,7 @@ function main() {
     }
 
     filenames.forEach(filename => {
-      console.log('filename: ', filename)
+      console.log('filename: ', renderIndexView(filename))
     })
   })
 }
