@@ -1,3 +1,3 @@
-export default function ${propName} () {
-  return <div>${propName} View</div>
+export default function __viewName__ () {
+  return <div>__viewName__ View</div>
 }
